@@ -154,14 +154,15 @@ def vigenere_cipher(message, key):
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
     
-    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    mes_len = len(message)
-    msg = ""
-    key_in = 0
-    key_out = (len(message)//len(key))*str(key) + key[:(len(message)%len(key))]
 
     def vigenere_cipher(message, key):
 
+        alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        mes_len = len(message)
+        msg = ""
+        key_in = 0
+        key_out = (len(message)//len(key))*str(key) + key[:(len(message)%len(key))]
+        
         for var in message:
             if var == " ":
                 msg += " "
