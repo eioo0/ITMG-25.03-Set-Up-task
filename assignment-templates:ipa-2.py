@@ -167,7 +167,7 @@ def vigenere_cipher(message, key):
                 msg += " "
                 key_in += 1
             else:
-                newmsg += alpha[(alpha.index(var) + alpha.index(key_out[key_in]))%26]
+                newmsg += alphabet[(alphabet.index(var) + alphabet.index(key_out[key_in]))%26]
                 key_in += 1
 
         return msg
